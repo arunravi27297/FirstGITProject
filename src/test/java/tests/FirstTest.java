@@ -1,13 +1,11 @@
 package tests;
-import org.testng.annotations.Test;
 
+import org.testng.annotations.Test;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
-
 import static io.restassured.RestAssured.*;
 import static io.restassured.matcher.RestAssuredMatchers.*;
 import static org.hamcrest.Matchers.*;
-
 import java.util.HashMap;
 
 public class FirstTest {
@@ -23,6 +21,7 @@ public class FirstTest {
 		
 		id= given().
 		contentType("application/json").
+		body(map).
 		when().
 		post("/api/users").jsonPath().getInt("id");
 		
@@ -39,6 +38,7 @@ public class FirstTest {
 		
 		given().
 		contentType("application/JSON").
+		body(map).
 		when().
 		put("https://reqres.in/api/users/"+id).
 		then().

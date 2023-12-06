@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.FirstTest">
+      <class name="tests.DifferentRequestBody">
         <methods>
-          <include name="getMethod1"/>
-          <include name="putMethod1"/>
-          <include name="postCallSample1"/>
+          <include name="externalJsonBody"/>
         </methods>
-      </class> <!-- tests.FirstTest -->
+      </class> <!-- tests.DifferentRequestBody -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
