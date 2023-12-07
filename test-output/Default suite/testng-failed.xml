@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.DifferentRequestBody">
+      <class name="tests.JsonResponseValidation">
         <methods>
-          <include name="externalJsonBody"/>
+          <include name="validationBodyArray"/>
         </methods>
-      </class> <!-- tests.DifferentRequestBody -->
+      </class> <!-- tests.JsonResponseValidation -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
