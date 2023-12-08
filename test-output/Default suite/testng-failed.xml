@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.SchemaValidation">
+      <class name="apiChaining.CreateUser">
         <methods>
-          <include name="xmlSchemaValidation"/>
+          <include name="createUser"/>
         </methods>
-      </class> <!-- tests.SchemaValidation -->
+      </class> <!-- apiChaining.CreateUser -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
